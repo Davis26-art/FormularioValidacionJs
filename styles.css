@@ -1,0 +1,91 @@
+body {
+    font-family: 'Delius', cursive;
+    background-color: #acedf0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #623ffc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #623ffc;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #623ffc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #51af60;
+}
+
+.contador {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 13px;
+    background-color: #623ffc;
+    color: white;
+    margin-top: 40px;
+}

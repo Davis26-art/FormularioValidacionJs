@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Delius&display=swap">
+    <title>Formulario Moderno JS Básico</title>
+    <link rel="icon" type="image/jpg" href="">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>📋 Bienvenido al Registro de Usuario 📋</h1>
+    </header>
+
+    <main class="container">
+        <form class="formulario" id="formulario">
+            <h2>Formulario de Registro</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre:" require>
+            <p class="error" id="error-nombre"></p>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido:" require>
+            <p class="error" id="error-apellido"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo:" require>
+            <p class="error" id="error-email"></p>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="1" max="100" placeholder="Ingresa tu edad:" require>
+            <p class="error" id="error-edad"></p>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" require>
+            <p class="error" id="error-fechaNacimiento"></p>
+
+            <label for="genero">Género:</label>
+            <select name="genero" id="genero" require>
+                <option value="">Seleccionar...</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            <p class="error" id="error-genero"></p>
+
+            <label for="pais">País:</label>
+            <input type="text" name="pais" id="pais" placeholder="Ingresa tu país:" require>
+            <p class="error" id="error-pais"></p>
+
+            <label for="descripcion">Descripción personal:</label>
+            <textarea name="descripcion" id="descripcion" maxlength="150" placeholder="Escribe algo sobre ti:"
+                require></textarea>
+            <div class="contador"><span id="contador">0</span>/150 caracteres</div>
+            <p class="error" id="error-descripcion"></p>
+
+            <div class="terminos">
+                <input type="checkbox" name="terminos" id="terminos" require>
+                <label for="terminos">Acepto los términos y condiciones</label>
+                <p class="error" id="error-terminos"></p>
+            </div>
+
+            <div class="botones">
+                <button type="submit" id="btnEnviar">Enviar</button>
+                <button type="reset" id="btnBorrar">Borrar</button>
+
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Proyecto de práctica - Eventos JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
