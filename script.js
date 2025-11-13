@@ -127,6 +127,7 @@ function validarDescargar(e) {
     }
 }
 
+// Barra de progreso
 function actualizarProgreso() {
     let completados = 0;
     const total = campos.length - 1;
