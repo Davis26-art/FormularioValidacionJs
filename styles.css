@@ -57,6 +57,7 @@ textarea {
 }
 
 button {
+    font-family: 'Delius', cursive;
     padding: 10px 15px;
     margin-top: 15px;
     background-color: #623ffc;
