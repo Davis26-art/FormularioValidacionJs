@@ -124,19 +124,21 @@ function validarDescargar(e) {
         form.reset();
         contador.textContent = '0';
         alert('✅ Formulario válido. Se descargó el archivo JSON con tus datos.');
+        barra.style.width = '0%';
+
     }
 }
 
-function actualizarProgreso () {
+function actualizarProgreso() {
     let completados = 0;
     const total = campos.length - 1;
 
     campos.forEach((id) => {
         const campo = document.getElementById(id);
 
-        if(campo.type !== 'checkbox') {
-            if(campo.value && campo.value.trim() !== '') {
-                completados ++;
+        if (campo.type !== 'checkbox') {
+            if (campo.value && campo.value.trim() !== '') {
+                completados++;
             }
         }
     });
