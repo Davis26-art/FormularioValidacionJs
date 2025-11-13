@@ -31,6 +31,7 @@ btnEnviar.addEventListener('click', validarDescargar);
 // Botón Borrar
 btnBorrar.addEventListener('click', () => {
     form.reset();
+    barra.style.width = '0%';
     contador.textContent = '0';
     document.querySelectorAll('.error').forEach((elemento) => (elemento.textContent = ''));
 });
@@ -139,5 +140,11 @@ function actualizarProgreso () {
             }
         }
     });
+
+    const porcentaje = Math.round((completados / total) * 100);
+    barra.style.width = porcentaje + '%';
+
 }
+
+form.addEventListener('input', actualizarProgreso);
 

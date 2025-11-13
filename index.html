@@ -22,27 +22,27 @@
             <h2>Formulario de Registro</h2>
 
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre:" require>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre:" required>
             <p class="error" id="error-nombre"></p>
 
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido:" require>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido:" required>
             <p class="error" id="error-apellido"></p>
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Ingresa tu correo:" require>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo:" required>
             <p class="error" id="error-email"></p>
 
             <label for="edad">Edad:</label>
-            <input type="number" name="edad" id="edad" min="1" max="100" placeholder="Ingresa tu edad:" require>
+            <input type="number" name="edad" id="edad" min="1" max="100" placeholder="Ingresa tu edad:" required>
             <p class="error" id="error-edad"></p>
 
             <label for="fechaNacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNacimiento" id="fechaNacimiento" require>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
             <p class="error" id="error-fechaNacimiento"></p>
 
             <label for="genero">Género:</label>
-            <select name="genero" id="genero" require>
+            <select name="genero" id="genero" required>
                 <option value="">Seleccionar...</option>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
@@ -51,17 +51,17 @@
             <p class="error" id="error-genero"></p>
 
             <label for="pais">País:</label>
-            <input type="text" name="pais" id="pais" placeholder="Ingresa tu país:" require>
+            <input type="text" name="pais" id="pais" placeholder="Ingresa tu país:" required>
             <p class="error" id="error-pais"></p>
 
             <label for="descripcion">Descripción personal:</label>
             <textarea name="descripcion" id="descripcion" maxlength="150" placeholder="Escribe algo sobre ti:"
-                require></textarea>
+                required></textarea>
             <div class="contador"><span id="contador">0</span>/150 caracteres</div>
             <p class="error" id="error-descripcion"></p>
 
             <div class="terminos">
-                <input type="checkbox" name="terminos" id="terminos" require>
+                <input type="checkbox" name="terminos" id="terminos" required>
                 <label for="terminos">Acepto los términos y condiciones</label>
                 <p class="error" id="error-terminos"></p>
             </div>
