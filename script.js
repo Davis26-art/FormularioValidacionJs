@@ -1,5 +1,3 @@
-
-
 const campos = [
     'nombre',
     'apellido',
@@ -13,7 +11,6 @@ const campos = [
 ];
 
 const barra = document.getElementById('barra');
-
 const form = document.getElementById('formulario');
 const descripcion = document.getElementById('descripcion');
 const contador = document.getElementById('contador');
@@ -123,8 +120,9 @@ function validarDescargar(e) {
         URL.revokeObjectURL(url);
         form.reset();
         contador.textContent = '0';
-        alert('✅ Formulario válido. Se descargó el archivo JSON con tus datos.');
         barra.style.width = '0%';
+
+        alert('✅ Formulario válido. Se descargó el archivo JSON con tus datos.');
 
     }
 }
