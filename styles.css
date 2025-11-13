@@ -71,6 +71,21 @@ button:hover {
     background-color: #51af60;
 }
 
+.progreso {
+    margin-top: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra {
+    height: 100%;
+    width: 0%;
+    background-color: #623ffc;
+    transition: width 0.3s;
+}
+
 .contador {
     text-align: right;
     font-size: 12px;

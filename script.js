@@ -1,3 +1,19 @@
+
+
+const campos = [
+    'nombre',
+    'apellido',
+    'email',
+    'edad',
+    'fechaNacimiento',
+    'genero',
+    'pais',
+    'descripcion',
+    'terminos'
+];
+
+const barra = document.getElementById('barra');
+
 const form = document.getElementById('formulario');
 const descripcion = document.getElementById('descripcion');
 const contador = document.getElementById('contador');
@@ -109,3 +125,19 @@ function validarDescargar(e) {
         alert('✅ Formulario válido. Se descargó el archivo JSON con tus datos.');
     }
 }
+
+function actualizarProgreso () {
+    let completados = 0;
+    const total = campos.length - 1;
+
+    campos.forEach((id) => {
+        const campo = document.getElementById(id);
+
+        if(campo.type !== 'checkbox') {
+            if(campo.value && campo.value.trim() !== '') {
+                completados ++;
+            }
+        }
+    });
+}
+
