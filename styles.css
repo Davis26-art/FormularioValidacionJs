@@ -42,6 +42,7 @@ label {
 input,
 select,
 textarea {
+    font-family: 'Delius',cursive;
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
